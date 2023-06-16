@@ -1,0 +1,127 @@
+body {
+  background-color: #aad4cf;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  margin: 0 auto;
+  width: 999px;
+  text-align: center;
+}
+
+
+
+header .header {
+  position: relative;
+}
+header .header-image {
+  position: relative;
+}
+header .header-title {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+header a {
+  display: block; 
+  box-sizing: border-box;
+  width:333px; 
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+header li {
+  float: left;
+}
+header .story {
+  border-left: #222 1px solid;
+  border-right: #222 1px solid;
+}
+
+
+main {
+  box-sizing: border-box;
+  margin: 0 auto; 
+  width: 999px;
+  padding:0 10px 0 10px;
+  background-color: #eef8f7;
+}
+main h2 {
+  line-height: 4rem;
+  font-size: 2rem;
+  font-weight:normal;
+}
+main img {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+main p {
+  line-height: 1.4rem;
+}
+
+main h3 {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-weight: normal;
+}
+main .facts li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+main form {
+  border: 1px solid #222;
+  padding: 20px;
+  line-height: 2rem;
+}
+main #name, #e-mail {
+  width: 100%;
+  height: 1.4rem;
+  border: 1px solid lightgray;
+}
+main #message {
+  width: 100%;
+  height: 6rem;
+  border: 1px solid gray;
+  resize: none;
+}
+main h4 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 4rem;
+}
+main .answer {
+  line-height: 3rem;
+}
+main button {
+  background-color: transparent;
+  border: 1px solid #222;
+  width: 60px;
+  height: 40px;
+  font-size: 0.8rem;
+}
+
+footer {
+  text-align: right;
+  box-sizing: border-box;
+  margin: 0 auto; 
+  width: 999px;
+  padding:30px;
+  background-color: #eef8f7;
+  margin-bottom: 10px;
+}
