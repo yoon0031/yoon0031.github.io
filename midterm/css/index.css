@@ -1,9 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #aad4cf;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
 }
 
 
+
+/* center header */
 header {
   margin: 0 auto;
   width: 999px;
@@ -12,27 +19,32 @@ header {
 
 
 
+/* title text over image */
 header .header {
   position: relative;
 }
-header .header-image {
-  position: relative;
+header #header-image {
+  width: 100%;
 }
-header .header-title {
+header h1 {
   position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;
   font-size: 4rem;
   font-weight: normal;
   color: #fff;
+  width: 100%;
+  text-align: center;
 }
 
 
 
+/* navigation bar style  */
+header li {
+  display: inline-block;
+}
+
 header a {
-  display: block; 
-  box-sizing: border-box;
+  display: inline-block; 
   width:333px; 
   line-height: 60px;
   text-transform: uppercase;
@@ -41,43 +53,60 @@ header a {
 header li {
   float: left;
 }
-header .story {
+header ul :nth-child(2) a {
   border-left: #222 1px solid;
   border-right: #222 1px solid;
 }
 
 
+
+
+
+/* center main contents*/
 main {
-  box-sizing: border-box;
   margin: 0 auto; 
   width: 999px;
   padding:0 10px 0 10px;
   background-color: #eef8f7;
 }
+
+
+/* Life of a Starfish */
 main h2 {
   line-height: 4rem;
   font-size: 2rem;
   font-weight:normal;
+  clear: both;
+  padding-top: 20px;
 }
+/* Align image and text side */
 main img {
+  height: 250px;
   float: left;
   padding-right: 20px;
   padding-bottom: 30px;
 }
-main p {
-  line-height: 1.4rem;
-}
 
+
+
+/* Facts About Starfish */
 main h3 {
   font-size: 1.5rem;
   line-height: 3rem;
   font-weight: normal;
+  padding-top: 20px;
 }
-main .facts li {
+/* list style */
+main li {
   list-style-type: disc;
   list-style-position: inside;
+  padding-left: 3px;
+  line-height: 1rem;
 }
 
+
+
+/* form style */
 main form {
   border: 1px solid #222;
   padding: 20px;
@@ -107,15 +136,18 @@ main button {
   border: 1px solid #222;
   width: 60px;
   height: 40px;
-  font-size: 0.8rem;
+  font-size: 13px;
 }
 
+
+
+/* center footer */
 footer {
-  text-align: right;
-  box-sizing: border-box;
   margin: 0 auto; 
   width: 999px;
   padding:30px;
   background-color: #eef8f7;
   margin-bottom: 10px;
+
+  text-align: right;
 }
