@@ -1,3 +1,6 @@
+
+/* default setting  */
+
 * {
   box-sizing: border-box;
 }
@@ -9,11 +12,6 @@ body {
   background-color: white;
   color: #222;
   line-height: 1.4;
-}
-
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 img {
@@ -38,7 +36,19 @@ p {
 
 
 
-/* header  */
+
+
+/* Mobile approach styling  */
+
+/* center contents */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+/* header bar style */
 header .wrapper {
   display: flex;
   flex-direction: column;
@@ -114,7 +124,7 @@ header button {
 
 
 
-/* banner  */
+/* welcome banner  */
 .banner .wrapper div {
   display: flex;
   flex-direction: column;
@@ -145,9 +155,13 @@ header button {
   color: white;
 }
 
+.banner .wrapper div {
+  background-color: #222222cf ;
+  width: 100%;
+  padding: 1rem;
+}
 
-
-/* title text over image */
+/* banner text over image */
 .banner {
   background-image: url(../images/main-banner.jpg);
   background-repeat: no-repeat;
@@ -159,27 +173,12 @@ header button {
 
 
 
-/* .banner .wrapper{
-  position: relative;
-} */
-
-.banner .wrapper div {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-
-  background-color: #222222cf ;
-  width: 100%;
-  padding: 1rem;
-}
-
 
 /* About Us */
-.about {
+#about {
   background-color: #ffe6ac;
 }
-.about .wrapper {
+#about .wrapper {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -189,7 +188,7 @@ header button {
 
 
 /* Services Grid  */
-.services {
+#services {
   padding: 1rem;
 }
 .services-grid {
@@ -225,7 +224,12 @@ header button {
 }
 
 
+
+
+
 /* vision  */
+
+/* insert bg img  */
 .vision {
   background-image: url(../images/vision.jpg);
   background-repeat: no-repeat;
@@ -257,8 +261,11 @@ header button {
 }
 
 
+
+
+
 /* team */
-.team {
+#team {
   padding: 1rem;
 }
 .team-flex {
@@ -276,41 +283,44 @@ header button {
   background-color: #ffe6ac;
 }
 
-.team h3 {
+#team h3 {
   line-height: 1.3;
 }
-.team h4 {
+#team h4 {
   font-size: 1rem;
   border-bottom: #c78c06 solid 2px;
   margin-bottom: 1rem;
 }
 
 
+
+
+
 /* contact  */
-.contact {
+#contact {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
 
 
-/* form  */
-.contact form {
+/* Contact form  */
+#contact form {
   line-height: 1.6rem;
 }
-.contact #name, #e-mail {
+#contact #name, #e-mail {
   width: 100%;
   height: 1.8rem;
   border: 1px solid #222;
 }
-.contact #message {
+#contact #message {
   width: 100%;
   height: 9rem;
   border: 1px solid #222;
   resize: none;
 }
 
-.contact button {
+#contact button {
   background-color: #222;
   color: #c78c06;
   padding: .2rem;
@@ -318,29 +328,31 @@ header button {
   margin-top: 1rem;
 }
 
-/* table  */
-.contact table {
+/* operation hours table  */
+#contact table {
   display: table;
   width: 100%;
   border: 1px solid #222;
   border-collapse: collapse;
 }
 
-.contact th, td {
+#contact th, td {
   border: 1px solid #222;
   padding: .8rem;
 }
 
-.contact thead {
+#contact thead {
   background-color: #ffe6ac;
   text-align: center;
 }
 
 
 /* map  */
-.contact iframe {
+#contact iframe {
   width: 100%;
 }
+
+
 
 
 
@@ -351,8 +363,16 @@ footer {
 }
 
 
+
+
+
+
+/* styling for the screen size of 760px and above  */
+
 @media screen and (min-width:760px) {
 
+
+  /* header bar style  */
   header .wrapper {
     flex-direction: row;
     align-items: center;
@@ -379,20 +399,24 @@ footer {
   }
 
 
-  .about .wrapper {
+
+  /* About Us  */
+  #about .wrapper {
     display: flex;
     flex-direction: row;
     gap: 1rem;
   }
-  .about .wrapper div {
+  #about .wrapper div {
     flex-basis: 50%;
     overflow: hidden;
   } 
-  .about .wrapper img {
+  #about .wrapper img {
     height: 100%;
   } 
 
 
+  /* services grid  */
+  /* positioning contents */
   .services-grid {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -414,45 +438,52 @@ footer {
 
 
 
+
+
+  /* team  */
   .team-flex {
     gap: 0;
   }
 
-  .team article {
+  /* positioning  */
+  #team article {
   display: flex;
   flex-direction: row;
   }
 
-  .team div {
+  #team div {
     flex-basis: 50%;
     overflow: hidden;
   } 
 
-  .team img {
+  #team img {
     height: 100%;
   }
 
-  .team .bob-img {
+  #team .bob-img {
     order: 1;
   }
 
 
 
-  .contact .box {
+
+  /* contact  */
+  #contact .box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
   }
 
-  .contact .box div:nth-child(1) {
+  /* positioning contents */
+  #contact .box div:nth-child(1) {
     flex-basis: calc(50% - .5rem);
   } 
-  .contact .box div:nth-child(2) {
+  #contact .box div:nth-child(2) {
     flex-basis: 100%;
     order: 1;
   } 
-  .contact .box div:nth-child(3) {
+  #contact .box div:nth-child(3) {
     flex-basis: calc(50% - .5rem);
   } 
 
